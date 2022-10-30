@@ -1,8 +1,5 @@
 #requirements.txt
-
 mysql-connector-python
-matplotlib.pyplot
-matplotlib.dates
+matplotlib
 numpy
-streamlit
 datetime
