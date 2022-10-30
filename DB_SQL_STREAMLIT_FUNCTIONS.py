@@ -1,4 +1,3 @@
-import sys
 import mysql.connector
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
