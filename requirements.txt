@@ -1,0 +1,8 @@
+#requirements.txt
+
+mysql-connector-python
+matplotlib.pyplot
+matplotlib.dates
+numpy
+streamlit
+datetime
