@@ -3,4 +3,3 @@ mysql-connector-python
 matplotlib
 numpy
 datetime
-mysql.connector
