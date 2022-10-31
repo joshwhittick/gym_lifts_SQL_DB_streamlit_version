@@ -3,7 +3,4 @@ matplotlib
 numpy
 datetime
 streamlit
-ez_setup
-pg_config
 psycopg2
-postgresql
