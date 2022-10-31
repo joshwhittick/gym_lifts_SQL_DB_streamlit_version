@@ -1,6 +1,6 @@
 #requirements.txt
-mysql-connector-python
 matplotlib
 numpy
 datetime
 streamlit
+psycopg2
