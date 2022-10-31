@@ -13,11 +13,11 @@ deffinition of functions required for the streamlit web app
 main page for streamlit web app launching
 
 **make_SQL_DB_with_pyth.py**
-initial python script for making table in heroku DB although on their website they state:
+initial python code for making table in heroku DB although on their website they state:
 
 "Starting November 28th, 2022, free Heroku Dynos, free Heroku Postgres, and free Heroku Data for Redis® will no longer be available."
 
-so will have to transition to different cloud based web DB which is hard given i can only use free stuff lol just caus dont wanna run it of my own machines MySQL innit
+so will have to transition to different cloud based web DB which is hard given i can only use free stuff lol just caus dont wanna be running MySQL for public use on my own machine innit
 
 **page/Insert to Database.py**
 streamlit page defining widgets to input data and calling the necessary functions to write to the DB
