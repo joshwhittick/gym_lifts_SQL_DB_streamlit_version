@@ -6,13 +6,12 @@ import numpy as np
 import streamlit as st
 from datetime import date
 
-<<<<<<< HEAD
 db = mysql.connector.connect(
     host='ec2-54-228-125-183.eu-west-1.compute.amazonaws.com', 
     user='clokjbklnxevbe',
     password='1211673e1d579c5db019e37f1ce28b2894f5d0f8b14415dc82c116e725562442',
     database='d91nc5sad12f6v',
-    port='5432'
+    port='5432')
 
 mycursor = db.cursor()
 
@@ -22,7 +21,6 @@ def write_to_log(date, lift, lift_sets, lift_reps, lift_load, total_reps, total_
   db.commit()
 
 def total_lifted_for_exercise(exercise_X):
-
     mycursor.execute("SELECT SUM(Total_Load) FROM Lifts WHERE Exercise='%s' " % exercise_X)
     myresult = mycursor.fetchall()
 
