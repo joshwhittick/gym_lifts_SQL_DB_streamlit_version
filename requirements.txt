@@ -4,5 +4,6 @@ numpy
 datetime
 streamlit
 psycopg2-binary
+pg_config
 psycopg2
 postgresql
