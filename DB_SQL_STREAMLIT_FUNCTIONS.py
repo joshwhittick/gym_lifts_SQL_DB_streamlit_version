@@ -1,4 +1,4 @@
-import mysql.connector
+import mysql.connector as mysql
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib import style
@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 from datetime import date
 
-db = mysql.connector.connect(
+db = mysql.connect(
     host='localhost', 
     user='root',
     password='Kayak:27',
