@@ -7,11 +7,11 @@ import streamlit as st
 from datetime import date
 
 conn = psycopg2.connect(
-    host='ec2-54-228-125-183.eu-west-1.compute.amazonaws.com', 
-    user='clokjbklnxevbe',
-    password='1211673e1d579c5db019e37f1ce28b2894f5d0f8b14415dc82c116e725562442',
-    database='d91nc5sad12f6v',
-    port='5432')
+    host=st.secrets["host"], 
+    user=st.secrets["user"],
+    password=st.secrets["password"],
+    database=st.secrets["database"],
+    port=st.secrets["port"])
 
 mycursor = conn.cursor()
 
