@@ -24,3 +24,4 @@ if options == "2":
     plot_results(all_instances_of_exercise_x(lift))
   elif daterange_option == "y":
     plot_results(all_instances_of_exercise_x_in_date_range(lift))
+    
