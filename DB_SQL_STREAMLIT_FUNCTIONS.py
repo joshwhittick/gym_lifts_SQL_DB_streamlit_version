@@ -7,10 +7,10 @@ import streamlit as st
 from datetime import date
 
 db = mysql.connect(
-    host='localhost', 
-    user='root',
-    password='Kayak:27',
-    database="MY_LIFTS"
+    host='', 
+    user='',
+    password='',
+    database=''
     )
 
 mycursor = db.cursor()
