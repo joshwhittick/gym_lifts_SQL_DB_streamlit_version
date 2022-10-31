@@ -6,11 +6,12 @@ import numpy as np
 import streamlit as st
 from datetime import date
 
-db = mysql.connect(
-    host='localhost', 
-    user='root',
-    password='Kayak:27',
-    database="MY_LIFTS"
+db = mysql.connector.connect(
+    host='ec2-54-228-125-183.eu-west-1.compute.amazonaws.com', 
+    user='clokjbklnxevbe',
+    password='1211673e1d579c5db019e37f1ce28b2894f5d0f8b14415dc82c116e725562442',
+    database='d91nc5sad12f6v',
+    port='5432'
     )
 
 mycursor = db.cursor()
