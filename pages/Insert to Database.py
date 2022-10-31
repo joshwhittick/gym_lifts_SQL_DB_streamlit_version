@@ -18,3 +18,4 @@ with st.form("insert vallues for lift", clear_on_submit=True):
   if st.form_submit_button() == True:
     st.text("Data commited to DB")
     write_to_log(date, lift, sets, reps, load, total_reps, total_load)
+    
