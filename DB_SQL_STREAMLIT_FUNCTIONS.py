@@ -18,7 +18,7 @@ mycursor = conn.cursor()
 #function for writing data to DB
 def write_to_log(date, lift, lift_sets, lift_reps, lift_load, total_reps, total_load):
   mycursor.execute("INSERT INTO Lifts (Date_of_exercise, Exercise, Sets, Reps, Weight, Total_Reps, Total_Load) VALUES (%s, %s, %s, %s, %s, %s, %s)", (date, lift, lift_sets, lift_reps, lift_load, total_reps, total_load))
-  db.commit()
+  conn.commit()
 
 def total_lifted_for_exercise(exercise_X):
     mycursor.execute("SELECT SUM(Total_Load) FROM Lifts WHERE Exercise='%s' " % exercise_X)
