@@ -3,5 +3,6 @@ matplotlib
 numpy
 datetime
 streamlit
-postgresql
+psycopg2-binary
 psycopg2
+postgresql
