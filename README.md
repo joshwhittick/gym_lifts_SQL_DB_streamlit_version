@@ -19,13 +19,13 @@ initial python code for making table in heroku DB although on their website they
 
 so will have to transition to different cloud based web DB which is hard given i can only use free stuff lol just caus dont wanna be running MySQL for public use on my own machine innit
 
-**page/Insert to Database.py**
-streamlit page defining widgets to input data and calling the necessary functions to write to the DB
+**pages/Insert to Database.py**
+build streamlit page defining widgets to input data and calling the necessary functions to write to the DB
 
 **pages/Interogate Database.py**
-streamlit webpage defining widgets where user can query DB, file calls necessary functions to connect to DB and express the results as text and graphs 
+build streamlit page defining widgets where user can query DB data, calls necessary functions to connect to DB and express the results as text and graphs 
 
-this could b improved to be more "valuable" i.e. more relevant graphs or other output formats like .csv files blah blah blah
+this could be improved to be more "valuable" i.e. more relevant graphs or other output formats like .csv files blah blah blah
 
 **requirements.txt**
 for streamlit to "pip install" the appropriate packages
