@@ -8,7 +8,7 @@ st.markdown("# Insert to Database")
 date = st.text_input("Enter a date of gym session (YYYY-MM-DD):")
 st.caption("Enter values for all exercises perfomed that day top enter and then commit to DB")
 
-with st.form("insert vallues for lift", clear_on_submit=True):
+with st.form("Insert values for lift", clear_on_submit=True):
   lift = st.text_input("enter lift")
   sets = st.number_input("enter sets")
   reps = st.number_input("enter reps")
