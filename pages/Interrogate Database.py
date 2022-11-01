@@ -10,18 +10,21 @@ st.text("1: See all time total weight lifted for an exercise.\n2: See all the da
 options = st.radio('Pick query option:', ('1', '2'))
  
 if options == "1":
-  lift = st.text_input("What lift do you want to see the sum of all weight lifted for?")
-  daterange_option = st.text_input("Do you need a date range? (y/n)")
-  if daterange_option == "n":
-    total_lifted_for_exercise(lift)
-  elif daterange_option == "y":
-    total_lifted_for_exercise_in_date_range(lift)
+  with st.form("Enter values", clear_on_submit=True):
+    lift = st.text_input("What lift do you want to see the sum of all weight lifted for?")
+    daterange_option = st.text_input("Do you need a date range? (y/n)")
+    if st.form_submit_button() == True:
+      if daterange_option == "n":
+        total_lifted_for_exercise(lift)
+      elif daterange_option == "y":
+        total_lifted_for_exercise_in_date_range(lift)
 
 if options == "2":
-  lift = st.text_input("What lift do you want to see all data for?")
-  daterange_option = st.text_input("Do you need a date range? (y/n)")
-  if daterange_option == "n":
-    plot_results(all_instances_of_exercise_x(lift))
-  elif daterange_option == "y":
-    plot_results(all_instances_of_exercise_x_in_date_range(lift))
-    
+  with st.form("Enter values", clear_on_submit=True):
+    lift = st.text_input("What lift do you want to see all data for?")
+    daterange_option = st.text_input("Do you need a date range? (y/n)")
+    if st.form_submit_button() == True:
+      if daterange_option == "n":
+        plot_results(all_instances_of_exercise_x(lift))
+      elif st.form_submit_button() == True and daterange_option == "y":
+        plot_results(all_instances_of_exercise_x_in_date_range(lift))
