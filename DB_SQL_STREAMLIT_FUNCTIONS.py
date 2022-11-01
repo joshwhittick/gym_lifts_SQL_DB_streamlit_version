@@ -104,7 +104,7 @@ def plot_results(x):
   ax3.plot(dates, load)
   plt.xlabel("Date")
   plt.xticks(dates, rotation = 45)
-  ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+  ax1.xaxis.set_major_formatter(mdates.DateFormatter('%m-&d'))
   ax1.set_ylabel("Total reps")
   ax2.set_ylabel("Total lifted")
   ax3.set_ylabel("Load used")
