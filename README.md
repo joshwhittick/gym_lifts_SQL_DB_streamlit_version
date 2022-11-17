@@ -4,7 +4,7 @@
 
 https://joshwhittick-gym-lifts-sql-db-heroku.streamlit.app/
 
-files here are for the purpose of launcing app on streamlit and not for running on personal machine with MySQL DB
+files here are for the purpose of launcing app on streamlit
 
 **notes on files included:**
 
