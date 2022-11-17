@@ -2,6 +2,8 @@
 
 **Development of https://github.com/joshwhittick/gym_lifting_tracking as a web app using https://streamlit.io to host and https://heroku.com/ for a PostgreSQL DB**
 
+https://joshwhittick-gym-lifts-sql-db-heroku.streamlit.app/
+
 files here are for the purpose of launcing app on streamlit and not for running on personal machine with MySQL DB
 
 **notes on files included:**
